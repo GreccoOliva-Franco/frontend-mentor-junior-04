@@ -60,7 +60,7 @@ export function useApp() {
           return { ...prevState, hasPeopleError: true }
         }
         case 'app.reset': {
-          return { ...prevState, defaults }
+          return { ...prevState, ...defaults };
         }
       }
     },
